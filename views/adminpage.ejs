@@ -11,12 +11,47 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link href="/index.css" rel="stylesheet" />
   </head>
   <body style="font-family: 'Roboto', sans-serif">
-    <%= console.log(weight1) %>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white">
+      <div class="container-fluid">
+        <h2 class="navbar-brand" href="#">
+          <span style="color: #051830">Juh</span
+          ><span style="color: #f5910f">osi</span>
+        </h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/login">Login</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admins">Admin Page</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/customer">Customer Page</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
     <table
       class="table table-striped table-hover"
-      style="margin: 100px 50px 100px 50px; width: 1500px"
+      style="margin: 50px 50px 100px 50px; width: 1500px"
     >
       <thead>
         <tr>
@@ -29,21 +64,21 @@
       <tbody>
         <tr>
           <th scope="row" style="width: 250px">Quantity</th>
-          <td style="width: 300px"><%= quantity1 %></td>
-          <td style="width: 300px"><%= quantity2 %></td>
-          <td style="width: 300px"><%= tquantity %></td>
+          <td style="width: 300px">60</td>
+          <td style="width: 300px">520</td>
+          <td style="width: 300px">580</td>
         </tr>
         <tr>
           <th scope="row">Weight</th>
-          <td style="width: 300px"><%= weight1 %></td>
-          <td style="width: 300px"><%= weight2 %></td>
-          <td style="width: 300px"><%= tweight %></td>
+          <td style="width: 300px">210</td>
+          <td style="width: 300px">180</td>
+          <td style="width: 300px">390</td>
         </tr>
         <tr>
           <th scope="row" style="width: 300px">Box Count</th>
-          <td style="width: 300px"><%= bcount1 %></td>
-          <td style="width: 300px"><%= bcount2 %></td>
-          <td style="width: 300px"><%= tbcount %></td>
+          <td style="width: 300px">10</td>
+          <td style="width: 300px">20</td>
+          <td style="width: 300px">30</td>
         </tr>
       </tbody>
     </table>
