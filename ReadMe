@@ -1,0 +1,23 @@
+Open the  mysql folder and make sure the terminal is inside mysql
+First step is to install the dependencies by doing 'npm i'
+In server.js file please change the mysql database credentials
+In order to run the project just write 'npm start'
+The database table names are 'user' and 'customer'
+
+User table cosnsits of :- 'id' and 'password'
+
+customer table contains :- odate  ,
+cname ,
+onwer ,
+item ,
+quantity ,
+weight ,
+rshipment ,
+trackid ,
+ssize ,
+bcount ,
+specification ,
+cquantity 
+
+
+THANKYOU 

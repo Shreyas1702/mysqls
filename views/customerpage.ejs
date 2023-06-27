@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="/index.css" rel="stylesheet" />
+  </head>
+  <body>
+    <form
+      class="row g-3 needs-validation formbodys"
+      method="post"
+      action="/customers"
+      novalidate
+    >
+      <div class="col-md-4">
+        <input
+          type="text"
+          class="form-control"
+          id="validationCustom01"
+          placeholder="Company Name"
+          name="cname"
+          required
+        />
+        <div class="invalid-feedback">Please fill the Company Name.</div>
+
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-md-4">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Onwer"
+          name="onwer"
+          id="validationCustom02"
+          required
+        />
+        <div class="invalid-feedback">Please fill the Onwer.</div>
+
+        <div class="valid-feedback">Looks good!</div>
+      </div>
+      <div class="col-md-4">
+        <div class="input-group has-validation">
+          <input
+            type="text"
+            class="form-control"
+            placeholder="Item"
+            name="item"
+            id="validationCustomUsername"
+            aria-describedby="inputGroupPrepend"
+            required
+          />
+          <div class="invalid-feedback">Please fill the Item Field.</div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Quantity"
+          id="validationCustom03"
+          name="quantity"
+          required
+        />
+        <div class="invalid-feedback">Please provide a Quantity.</div>
+      </div>
+      <div class="col-md-4">
+        <input
+          type="number"
+          class="form-control"
+          placeholder="Weight"
+          name="weight"
+          id="validationCustom05"
+          required
+        />
+        <div class="invalid-feedback">Please provide a proper Weight.</div>
+      </div>
+      <div class="col-md-4">
+        <input
+          type="date"
+          class="form-control"
+          placeholder="Order Date"
+          name="odate"
+          id="validationCustom05"
+          required
+        />
+        <div class="invalid-feedback">Please provide a Order Date.</div>
+      </div>
+      <div class="col-md-4">
+        <input
+          type="text"
+          class="form-control"
+          placeholder="Tracking ID"
+          name="trackid"
+          id="validationCustom03"
+          required
+        />
+        <div class="invalid-feedback">Please provide a Tracking Id.</div>
+      </div>
+      <div class="col-md-4">
+        <input
+          type="text"
+          class="form-control"
+          name="ssize"
+          placeholder="Shipment Size - (LxBxH)"
+          id="validationCustom05"
+          required
+        />
+        <div class="invalid-feedback">Please fill the Dimensions.</div>
+      </div>
+      <div class="col-md-4">
+        <input
+          type="number"
+          class="form-control"
+          name="bcount"
+          placeholder="Box Count"
+          id="validationCustom05"
+          required
+        />
+        <div class="invalid-feedback">Please provide the Box Count.</div>
+      </div>
+      <div class="col-md-12">
+        <textarea
+          name="rshipment"
+          class="form-control"
+          id="validationCustom05"
+          cols="125"
+          rows="5"
+          placeholder="Request for Shipment"
+        ></textarea>
+        <div class="invalid-feedback">Please fill request detail.</div>
+      </div>
+      <div class="col-md-12">
+        <textarea
+          name="specification"
+          id="validationCustom05"
+          class="form-control"
+          placeholder="Specification"
+          cols="125"
+          rows="5"
+          placeholder="Request for Shipment"
+        ></textarea>
+        <div class="invalid-feedback">Please fill specification detail.</div>
+      </div>
+      <div class="col-md-12">
+        <input
+          type="text"
+          class="form-control"
+          name="cquantity"
+          placeholder="Checklist Quantity"
+          id="validationCustom05"
+          required
+        />
+        <div class="invalid-feedback">Please fill the Checklist Quantity.</div>
+      </div>
+      <div class="col-md-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+  </body>
+  <script>
+    // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      "use strict";
+
+      // Fetch all the forms we want to apply custom Bootstrap validation styles to
+      var forms = document.querySelectorAll(".needs-validation");
+
+      // Loop over them and prevent submission
+      Array.prototype.slice.call(forms).forEach(function (form) {
+        form.addEventListener(
+          "submit",
+          function (event) {
+            if (!form.checkValidity()) {
+              event.preventDefault();
+              event.stopPropagation();
+            }
+
+            form.classList.add("was-validated");
+          },
+          false
+        );
+      });
+    })();
+  </script>
+</html>
