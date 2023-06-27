@@ -106,3 +106,43 @@
   margin: auto;
   padding-top: 50px;
 }
+
+@media screen and (max-width: 1400px) {
+  .formbody {
+    margin: 30px 75px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .formbody {
+    margin: 30px 45px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .leftbody {
+    width: 50%;
+    border-radius: 10px 5px 5px 10px;
+    background-color: #152238;
+    text-align: center;
+    color: white;
+  }
+
+  .loginbody {
+    width: 50%;
+    height: 650px;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  .loginbody input {
+    width: 250px;
+    margin-top: 30px;
+  }
+
+  #logbtn {
+    width: 250px;
+    margin-top: 20px;
+  }
+}
