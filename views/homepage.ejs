@@ -36,15 +36,23 @@
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="/">Home</a>
             </li>
+            <% if(data == undefined){ %>
             <li class="nav-item">
               <a class="nav-link" href="/login">Login</a>
             </li>
+            <% } else if(data == "customer1") { %>
             <li class="nav-item">
-              <a class="nav-link" href="/admins">Admin Page</a>
+              <a class="nav-link" href="/customer">Form</a>
             </li>
+            <% } else if(data == "customer2") { %>
             <li class="nav-item">
-              <a class="nav-link" href="/customer">Customer Page</a>
+              <a class="nav-link" href="/customer">Form</a>
             </li>
+            <% } else { %>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin">Admin</a>
+            </li>
+            <% } %>
           </ul>
         </div>
       </div>
